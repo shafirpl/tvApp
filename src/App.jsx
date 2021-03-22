@@ -9,7 +9,6 @@ function App() {
 const [cartButtonClicked, setCartButtonClicked] = useState(false)
 //const [cartButtonClicked, setCartButtonClicked] = useState(true)
 const [vidPlaying, setVidPlaying] = useState(true)
-const [gifPlaying, setGifPlaying] = useState(false)
 const [showSideBar, setShowSideBar] = useState(false)
 const vidRef = useRef(null)
 return (
@@ -18,6 +17,7 @@ return (
     <div className="Topmenu">
       <Button variant="light" onClick={()=> {
         vidRef.current.play();
+        vidPlaying? setVidPlaying(false):setVidPlaying(true)
         setShowSideBar(false)
         setCartButtonClicked(false)}}>
         <FontAwesomeIcon icon={faLongArrowAltLeft} /></Button>
