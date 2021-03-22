@@ -1,0 +1,78 @@
+.App {
+  /* text-align: center; */
+  /* height: 100vh; */
+  padding-top: 1rem;
+  /* background-color: orange; */
+  background-color: black;
+}
+
+.recommendation{
+  position: absolute;
+  color: white;
+  bottom: 180px;
+  right: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: row;
+  overflow-x:auto;
+  /* width: 100%; */
+  border: 1px solid red;
+  width: 100%;
+}
+.flex-scroll{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.box{
+  width: 300px;
+  background-color: red;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.Topmenu{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 1rem;
+  left: 15px;
+  z-index: 100;
+}
+
+.SideMenu{
+  z-index: 50;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(56, 56, 56, 0.5);
+  color: white;
+}
+
+.SideMenuList{
+  list-style-type:none;
+  padding: 1rem;
+}
+
+.btn{
+  border-radius: 0 !important;
+}
+
+li{
+  cursor: pointer;
+}
+
+li:hover{
+  background-color: blue;
+}
+
+.listHeader{
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+
+
