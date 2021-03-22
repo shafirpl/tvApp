@@ -1,6 +1,6 @@
 import React, { useState, useRef} from 'react';
 import './App.css';
-import {Container, Button, ResponsiveEmbed, Card} from "react-bootstrap";
+import {Container, Button, ResponsiveEmbed} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltLeft, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
