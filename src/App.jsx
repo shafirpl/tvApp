@@ -3,7 +3,7 @@ import './App.css';
 import {Container, Button, ResponsiveEmbed} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLongArrowAltLeft, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowAltLeft, faShoppingCart, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 let limit = 1000;
@@ -73,6 +73,10 @@ return (
         setCartButtonClicked(!cartButtonClicked)
         }}>
         <FontAwesomeIcon icon={faShoppingCart} /></Button>
+        <Button variant="light" onClick={()=> {
+          alert(`Total spending is ${totalSpend}, credit limit is ${limit}`)
+        }}>
+        <FontAwesomeIcon icon={faDollarSign} /></Button>
     </div>
     <div className="Video">
       <ToastContainer />
