@@ -118,7 +118,7 @@ return (
           </div>
           <div className="box" onClick={ ()=> {
             setItemPrice(600)
-            setItemName("iPad Pro")
+            setItemName("iPad Air")
             setShowSideBar(true)
             }}>
             <ResponsiveEmbed aspectRatio="4by3">
@@ -141,6 +141,24 @@ return (
             }}>
             <ResponsiveEmbed aspectRatio="4by3">
               <embed type="image/jpg" src="./camera.jpg" />
+            </ResponsiveEmbed>
+          </div>
+          <div className="box" onClick={ ()=> {
+            setItemPrice(40)
+            setItemName("Nike Jacket")
+            setShowSideBar(true)
+            }}>
+            <ResponsiveEmbed aspectRatio="4by3">
+              <embed type="image/jpg" src="./jacket.jpg" />
+            </ResponsiveEmbed>
+          </div>
+          <div className="box" onClick={ ()=> {
+            setItemPrice(30)
+            setItemName("MLB Tshirt")
+            setShowSideBar(true)
+            }}>
+            <ResponsiveEmbed aspectRatio="4by3">
+              <embed type="image/jpg" src="./tshirt.jpg" />
             </ResponsiveEmbed>
           </div>
         </div>
