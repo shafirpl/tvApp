@@ -57,18 +57,18 @@ return (
     <div className="Topmenu">
       <Button variant="light" onClick={()=> {
         vidRef.current.play();
-        vidPlaying? setVidPlaying(false):setVidPlaying(true)
+        //vidPlaying? setVidPlaying(false):setVidPlaying(true)
         setShowSideBar(false)
         setCartButtonClicked(false)}}>
         <FontAwesomeIcon icon={faLongArrowAltLeft} /></Button>
       <Button variant="light" onClick={()=> {
         if(vidPlaying){
-        setVidPlaying(false)
-        vidRef.current.pause();
+        //setVidPlaying(false)
+        //vidRef.current.pause();
         }
         else{
         setVidPlaying(true)
-        vidRef.current.play()
+        //vidRef.current.play()
         }
         setCartButtonClicked(!cartButtonClicked)
         }}>
